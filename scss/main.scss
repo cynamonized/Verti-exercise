@@ -1,0 +1,53 @@
+@import "settings/_reset.scss";
+@import "settings/_variables";
+@import "settings/_mixins";
+@import "settings/buttons";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $main-background;
+  color: $primary-text;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: $main-background;
+  color: $primary-text;
+  font-family: "Open Sans", sans-serif;
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+
+    @include tablet {
+      width: 90%;
+    }
+
+    @include desktop {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    @include biggerDesktop {
+      max-width: 1200;
+    }
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@import "sections/_nav";
+@import "sections/_header";
+@import "sections/_main";
+@import "sections/_article";
+@import "sections/_footer";

@@ -1,0 +1,96 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+@import "../settings/buttons";
+
+header {
+  background: white;
+  box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+
+  margin: 0 auto;
+
+  margin-top: 35px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .header-left-column {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      font-size: 2.1em;
+      font-weight: 800;
+      margin-top: 35px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 30px;
+    }
+  }
+
+  .header-right-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    .header-left-column {
+      h2 {
+        font-size: 3.2em;
+      }
+
+      h3 {
+        font-size: 2.5em;
+        line-height: 1.5em;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 66px;
+    padding-bottom: 66px;
+    .header-left-column {
+      width: 78%;
+      margin-bottom: 20px;
+      h2 {
+        text-align: left;
+        margin: unset;
+        margin-bottom: 0.3em;
+        font-size: 3.2em;
+      }
+
+      h3 {
+        text-align: left;
+        margin: unset;
+        font-size: 2.5em;
+      }
+    }
+
+    .header-right-column {
+      width: 500px;
+      justify-content: center;
+      padding-left: 3em;
+    }
+  }
+
+  @include biggerDesktop {
+    .header-left-column {
+      max-width: 55%;
+      h2 {
+        font-size: 3.6em;
+      }
+    }
+
+    .header-right-column {
+      max-width: 40%;
+    }
+  }
+}

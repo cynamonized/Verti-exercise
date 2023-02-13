@@ -1,0 +1,24 @@
+//980px tablet
+//736px mobile
+
+@mixin tablet {
+  @media (min-width: 736px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 980px) {
+    @content;
+  }
+}
+
+@mixin biggerDesktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// przy 1680 -> container 1400
+//1280 - 1680 - 1200
+// przy 1280 -> 960

@@ -1,0 +1,114 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+@import "../settings/buttons";
+
+footer {
+  padding: 15px;
+
+  .footer__columns {
+    .footer__column {
+      padding: 40px 0;
+      position: relative;
+
+      h6 {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+      }
+
+      .column__link {
+        color: #444;
+        font-weight: 300;
+        display: block;
+        margin: 1em 0;
+      }
+
+      .column__link:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #bebebe;
+        bottom: 0;
+        left: 0;
+      }
+
+      .contact__social-media {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 1.5em;
+        div {
+          background-color: #444;
+          text-align: center;
+          color: white;
+          width: 25px;
+          height: 25px;
+          padding: 0.35em;
+          border-radius: 4px;
+        }
+      }
+
+      .contact__adress {
+        font-size: 1em;
+        font-weight: 200;
+        color: #444;
+        line-height: 2em;
+        display: block;
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      .footer__column {
+        width: 50%;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    @include desktop {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 25px;
+      .footer__column {
+        flex-grow: 1;
+        .column__link {
+          font-size: 0.8em;
+        }
+
+        .contact__adress {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  .copyrights {
+    margin: 40px 0;
+    .copyrights__row {
+      font-size: 1em;
+      color: #888888;
+      font-weight: 300;
+      line-height: 2em;
+      a {
+        color: #888888;
+      }
+    }
+    &::after {
+      display: none;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

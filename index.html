@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="scss/main.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <!-- LOGO -->
+        <div class="logo-container">
+          <div class="logo">
+            <h1><a href="#">Verti</a></h1>
+          </div>
+          <span class="logo__subtitle">by HTML5 UP</span>
+        </div>
+
+        <!-- MOBILE NAV -->
+        <div class="nav-mobile">
+          <input id="chbx" type="checkbox" />
+          <label for="chbx">
+            <span class="navigation-hamburger__icon"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </label>
+
+          <ul class="links">
+            <li><a href="#">Welcome</a></li>
+            <li><a href="#">Dropdown</a></li>
+            <li><a href="#">Left Sidebar</a></li>
+            <li><a href="#">Right Sidebar</a></li>
+            <li><a href="#">No Sidebar</a></li>
+          </ul>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="nav-desktop">
+          <ul class="links">
+            <li><a class="active" href="#">Welcome</a></li>
+            <li><a href="#">Dropdown</a></li>
+            <li><a href="#">Left Sidebar</a></li>
+            <li><a href="#">Right Sidebar</a></li>
+            <li><a href="#">No Sidebar</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <div class="header-left-column">
+          <h2>Hi. This is Verti.</h2>
+          <h3>It's a free responsive site template by HTML5 UP</h3>
+        </div>
+        <div class="header-right-column">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right"></i>Ok let's go
+          </button>
+          <button class="btn btn-secondary">
+            <i class="fa-solid fa-question"></i>More info
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div class="main__columns">
+          <div class="columns__single-column">
+            <img src="./assets/pic01.jpg" class="column__image" />
+            <div class="column__content">
+              <h4>Put something here</h4>
+              <h5>Maybe here as well I think</h5>
+              <p class="column__text">
+                Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+                Praesent sed semper amet bibendum tristique fringilla.
+              </p>
+            </div>
+          </div>
+          <div class="columns__single-column">
+            <img src="./assets/pic02.jpg" class="column__image" />
+            <div class="column__content">
+              <h4>An interesting title</h4>
+              <h5>This is also an interesting subtitle</h5>
+              <p class="column__text">
+                Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+                Praesent sed semper amet bibendum tristique fringilla.
+              </p>
+            </div>
+          </div>
+          <div class="columns__single-column">
+            <img src="./assets/pic03.jpg" class="column__image" />
+            <div class="column__content">
+              <h4>Oh, and finally ...</h4>
+              <h5>Here's another intriguing subtitle</h5>
+              <p class="column__text">
+                Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+                Praesent sed semper amet bibendum tristique fringilla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <article>
+      <div class="container article__container">
+        <!-- LEFT -->
+        <div class="article__left-column">
+          <h6 class="left-column__title-tablet">So what's this all about?</h6>
+
+          <p class="left-column__text">
+            This is <span class="text__bold">Verti</span> a free and fully
+            responsive HTML5 site template by
+            <a href="" class="text__link">HTML5 UP</a>. Verti is released under
+            the
+            <a href="" class="text__link"
+              >Creative Commons Attribution license</a
+            >, so feel free to use it for any personal or commercial project you
+            might have going on (just don't forget to credit us for the design!)
+          </p>
+
+          <p class="left-column__text">
+            Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in
+            lectus. Praesent semper bibendum ipsum, et tristique augue fringilla
+            eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu
+            ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit
+            amet phasellus quam turpis.
+          </p>
+
+          <button class="btn btn-primary btn-article btn-article-left">
+            <i class="fa-solid fa-arrow-right"></i>Continue Reading
+          </button>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="article__right-column">
+          <h6>Interresting stuff</h6>
+          <div class="right-column__gallery">
+            <img src="./assets/pic04.jpg" class="gallery__photo" />
+            <img src="./assets/pic05.jpg" class="gallery__photo" />
+            <img src="./assets/pic06.jpg" class="gallery__photo" />
+            <img src="./assets/pic07.jpg" class="gallery__photo" />
+          </div>
+
+          <button class="btn btn-primary btn-article btn-article-right">
+            <i class="fa-solid fa-question"></i>More
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <div class="container">
+      <footer>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h6>Random stuff</h6>
+            <a href="" class="column__link">Etiam feugiat condimentum</a
+            ><a href="" class="column__link">Aliquam imperdiet suscipit odio</a
+            ><a href="" class="column__link">Sed porttitor cras in erat nec</a
+            ><a href="" class="column__link"
+              >Felis varius pellentesque potenti</a
+            ><a href="" class="column__link">Nullam scelerisque blandit leo</a>
+          </div>
+
+          <div class="footer__column">
+            <h6>Random stuff</h6>
+            <a href="" class="column__link">Etiam feugiat condimentum</a
+            ><a href="" class="column__link">Aliquam imperdiet suscipit odio</a
+            ><a href="" class="column__link">Sed porttitor cras in erat nec</a
+            ><a href="" class="column__link"
+              >Felis varius pellentesque potenti</a
+            ><a href="" class="column__link">Nullam scelerisque blandit leo</a>
+          </div>
+
+          <div class="footer__column">
+            <h6>Random stuff</h6>
+            <a href="" class="column__link">Etiam feugiat condimentum</a
+            ><a href="" class="column__link">Aliquam imperdiet suscipit odio</a
+            ><a href="" class="column__link">Sed porttitor cras in erat nec</a
+            ><a href="" class="column__link"
+              >Felis varius pellentesque potenti</a
+            ><a href="" class="column__link">Nullam scelerisque blandit leo</a>
+          </div>
+
+          <div class="footer__column contact">
+            <h6>Contac us</h6>
+
+            <div class="contact__social-media">
+              <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+              <div class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="dribble">
+                <i class="fa-brands fa-square-youtube"></i>
+              </div>
+              <div class="pinterest">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
+            <p class="contact__adress">
+              1234 Fictional Road <br />Nashville, TN 00000 <br />(800) 555-0000
+            </p>
+          </div>
+        </div>
+        <div class="footer__column copyrights">
+          <p class="copyrights__row">© Untitled. All rights reserved</p>
+          <p class="copyrights__row">Design: <a href="#">HTML5 UP</a></p>
+          <p class="copyrights__row">Demo Images: <a href="#">Unsplash</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
